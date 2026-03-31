@@ -9,7 +9,7 @@ class Base:
         options = Options()
         options.add_argument("--start-maximized")
 
-        #  WebDriverManager handles driver automatically
+        # WebDriverManager handles driver automatically
         service = Service(ChromeDriverManager().install())
 
         self.driver = webdriver.Chrome(service=service, options=options)
